@@ -65,10 +65,6 @@ HRESULT __stdcall hookD3D11Present(IDXGISwapChain* pSwapChain, UINT SyncInterval
 	{
 		pFontWrapper->DrawString(pContext, L"W_D ScriptHook 0.14 by LMS", 16.0f, 16.0f, 16.0f, 0xffffffff, FW1_RESTORESTATE);
 	}
-	else if (diff > 55000 && diff < 70000)
-	{
-		pFontWrapper->DrawString(pContext, L"LukeD is the master of injuring himself with minimal effort. What a moron!", 46.0f, 150.0f, 250.0f, 0xffffffff, FW1_RESTORESTATE);
-	}
 
 	if (!LuaEngine::IsReloading())
 	{
